@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import { Global } from '@emotion/react';
 import tw, { css, GlobalStyles as BaseStyles } from 'twin.macro';
 
@@ -8,13 +10,11 @@ const customStyles = css`
   }
 `;
 
-const colorStyles = css``;
-
 const GlobalStyles = () => {
   return (
     <>
       <BaseStyles />
-      <Global styles={{ ...colorStyles, ...customStyles }} />
+      <Global styles={customStyles} />
     </>
   );
 };

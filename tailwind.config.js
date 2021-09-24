@@ -1,18 +1,15 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
   theme: {
     extend: {
-      colors: {
-        primary: colors.emerald,
-        secondary: colors.amber,
-        gray: {
-          darkest: '#1f2d3d',
-          dark: '#3c4858',
-          DEFAULT: '#c0ccda',
-          light: '#e0e6ed',
-          lightest: '#f9fafc',
-        },
+      backgroundColor: {
+        primary: 'var(--bg-primary)',
+        secondary: 'var(--bg-secondary)',
+        tertiary: 'var(--color-primary)',
+      },
+      textColor: {
+        primary: 'var(--text-primary)',
+        secondary: 'var(--text-secondary)',
+        tertiary: 'var(--color-primary)',
       },
       keyframes: {
         wiggle: {
